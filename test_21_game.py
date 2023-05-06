@@ -1,5 +1,4 @@
 import pytest
-from counting_to_21game import computer_turn, user_turn
 from unittest.mock import patch
 
 #test_user_turn_valid_input tests to ensure that the correct output is returned for a valid input (1 or 2) from the user. 
