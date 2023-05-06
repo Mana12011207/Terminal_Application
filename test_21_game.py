@@ -8,4 +8,7 @@ def test_user_turn_valid_input(input_value, expected_output):
     with patch('builtins.input', return_value=str(input_value)):
         assert user_turn(5) == expected_output
         
-
+#  Test to ensure that the return value of the function is 1 or 2, as the number is randomly selected by the computer.
+def test_computer_turn():
+    choice = computer_turn(7)
+    assert choice in [1, 2]
