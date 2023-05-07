@@ -34,6 +34,9 @@ def play_game():
         current_total += user_choice
         if current_total >= 21:
             print(f"{bg('red')}You are the winner!{attr('reset')}")
+            with open("results.csv", "a")as results_file:
+                writer = csv.writer(results_file)
+                writer.writerow(["win"])
             break
         
         computer_choice = computer_turn(current_total)
