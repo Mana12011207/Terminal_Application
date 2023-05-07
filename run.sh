@@ -13,7 +13,7 @@ else
     echo "Virtual environment is not activated."
 fi
 
-
+clear
 
 python3 -m venv 21game-venv
 source 21game-venv/bin/activate
