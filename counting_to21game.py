@@ -45,8 +45,8 @@ def play_game():
         if current_total >= 21:
             print(f"{bg('blue')}You are the loser!{attr('reset')}")
             with open("results.csv", "a")as results_file:
-                    writer = csv.writer(results_file)
-                    writer.writerow(["lose"])
+                writer = csv.writer(results_file)
+                writer.writerow(["lose"])
             break
 
 if __name__ == "__main__":
